@@ -1,4 +1,4 @@
-package main
+package gotutorial
 
 import (
 	"log"
@@ -22,13 +22,6 @@ func LogDecorator(fn StringManipulator) StringManipulator {
 // Реализация StringManipulator
 func ToLower(s string) string {
 	return strings.ToLower(s)
-}
-
-// Пример использования
-func main() {
-	s := "Привет, МИР!"
-	fn := LogDecorator(ToLower)
-	fn(s)
 }
 
 // Ожидаемый результат:
